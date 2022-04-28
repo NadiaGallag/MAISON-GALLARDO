@@ -1,0 +1,19 @@
+/* -------------- Tipografia -------------- */
+/* --------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Source Sans Pro', sans-serif;  
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+} 
+// variables de SASS
+$colorredes: black;
+$colorpagina:rgb(250, 196, 20);
+@import "header.scss";
+@import "footer.scss"

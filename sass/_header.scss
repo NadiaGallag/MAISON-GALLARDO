@@ -1,0 +1,244 @@
+/* ---------------------------------------------------------- */
+/* ---------------- FONDO DE TODAS LAS PESTAÑAS ------------- */
+/* ---------------------------------------------------------- */
+.fondo {
+    background-image: url(../Medias/m.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 238, 169, 0.856);
+    width: 100%;
+    height: 100%;
+}
+.fondo_1 {
+    background-image: url(../Medias/g.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 238, 169, 0.856);
+    width: 100%;
+    height: 100%;
+
+}
+
+.fondo_2 {
+    background-image: url(../Medias/mm.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 238, 169, 0.856);
+    width: 100%;
+    height: 100%;
+}
+
+.fondo_3 {
+    background-image: url(../Medias/cor.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 238, 169, 0.856); 
+    width: 100%;
+    height: 100%;
+}
+
+.fondo_4 {
+    background-image: url(../Medias/palta.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 238, 169, 0.856);
+    width: 100%;
+}
+
+body {
+    header {
+        nav {
+            .container-fluid {
+                a {
+                    color: $colorpagina;
+                }
+            }
+        }
+    }
+}
+/* ----------------------------------------------------------------- */
+/* ---------------------------- MAIN INCIO INDEX ------------------- */
+/* ----------------------------------------------------------------- */
+.main_home {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    text-align: right;
+    margin-top: 10%;
+    color: $colorpagina;
+}
+/* ----------------------------------------------------------------- */
+/* ---------------------- MAIN NUESTROS PRODUCTOS ------------------ */
+/* ----------------------------------------------------------------- */
+main {
+    display: inline;
+    div {
+        h2 {
+            text-align: left;
+            color: black;
+            font-weight: bold;
+        }
+        p {
+            text-align:center ;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+        .img1 {
+            border-radius: 1500px;
+        }
+        .img2 {
+            border-radius: 1500px;
+        
+        }
+        .img3 {
+            border-radius: 1500px;
+        
+        }
+        .img4 {
+            border-radius: 1500px;
+        }
+    }
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------ INICIO DE QUINES SOMOS ----------------- */
+/* ---------------------------------------------------------------- */
+
+
+main {
+    .somos {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .texto1 {
+        .foto1 {
+            grid-area: primero;
+            display: flex;
+            justify-content: flex-start;
+            width: 45%;
+            height: 45%;
+        }
+        p {
+            color: black !important;
+            font-weight: bold;
+            margin: 8vh;
+            font-size: 3vw;
+        }
+    }
+    
+    .texto2 {
+        .foto2 {
+            grid-area: segundo;
+            display: flex;
+            justify-content: flex-end;
+            width: 45%;
+            height: 45%;
+            order: 1;
+        }
+        p {
+            color: black !important;
+            font-weight: bold;
+            margin: 8vh;
+            font-size: 3vw;
+        }
+    }
+    
+    #primero {
+        display: grid;
+        grid-template-rows: 20% 80%;;
+        grid-template-columns: repeat( 2 50%);
+        grid-template-areas: 
+        "primero" "segundo";
+    }
+}
+
+/* ---------------------------------------------------------------- */
+/* -------------------- MEDIAS DE QUIENES SOMOS ------------------- */
+/* ---------------------------------------------------------------- */
+@media screen and (max-width:480px) {
+    .texto1 {
+        font-size: 1rem;
+        margin-left: 2%;
+    }
+    .texto2 {
+        font-size: 0.8rem;
+        margin-right: 2%;
+    }
+    .fondo_2 {
+        width: 100%;
+        height: 100%;
+        padding-left: 2;
+    }
+}
+
+/* ----------------------------------------------------------------- */
+/* ------------------------- INICIO CONTACTO ---------------------- */
+/* --------------------------------------------------------------- */
+.contact__main {
+    display: grid;
+    grid-template-columns: 1 60%;
+    grid-template-rows: repeat(2 30% 60%);
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    p {
+        font-size: 3vw;
+        margin: 3rem;
+    }
+    .container {
+        div {
+            label {
+                font-size: 1.5vw;
+
+            }
+        }
+    }
+    
+}
+/* ----------------------------------------------------------------- */
+/* --------------------- INCIO SUCURSALES ------------------------ */
+/* ------------------------------------------------------------- */
+.sucursales {
+    display: grid;
+    grid-template-columns: 60vw;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+
+    .locales {
+        p {
+            font-size: 4vw; 
+            text-align: center; 
+        }
+        .sucursales__ {
+            li {
+                font-size: 2vw;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    
+    }
+    .mapa {
+        div{
+            width: 100%;
+            padding-right: 6vw;
+
+        }
+    }
+}
+

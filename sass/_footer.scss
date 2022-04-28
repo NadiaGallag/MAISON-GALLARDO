@@ -1,0 +1,43 @@
+/* ----------------------------------------------------------------- */
+/* ------------------ FOOTER DE TODAS LAS PÁGINAS ------------------- */
+/* ----------------------------------------------------------------- */
+footer {
+    .footer_sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color:  rgba(2, 2, 2, 0.57);
+        padding: 1%;
+        margin-top: 20%;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-size: 1.8rem;
+            width: 2.8rem;
+            height: 2.8rem;
+            background-color: rgb(250, 196, 20);
+            border-radius: 50%;
+            text-decoration: none;
+            i {
+                color: $colorredes
+            }
+            
+        }
+    }
+}
+/* ----------------------------------------------------------------- */
+/* -------------------- MEDIAS DE FOOTER -------------------- */
+/* ----------------------------------------------------------------- */
+@media screen and (max-width:480px) {
+    footer{
+        margin-top: 40%;
+    }
+    .footer_sec a {
+        font-size: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
