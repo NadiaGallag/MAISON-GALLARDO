@@ -21,7 +21,7 @@ footer {
             border-radius: 50%;
             text-decoration: none;
             i {
-                color: $colorredes
+                color: map-get($map, colorredes);
             }
             
         }

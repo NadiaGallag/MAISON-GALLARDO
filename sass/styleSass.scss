@@ -12,8 +12,14 @@
     list-style: none;
     scroll-behavior: smooth;
 } 
+@mixin tamañofotos() {
+    width: 45%;
+    height: 45%;
+}
 // variables de SASS
-$colorredes: black;
-$colorpagina:rgb(250, 196, 20);
+$map: (
+    colorredes: black,
+    colorpagina:rgb(250, 196, 20),
+);
 @import "header.scss";
-@import "footer.scss"
+@import "footer.scss";

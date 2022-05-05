@@ -110,32 +110,40 @@ main .somos {
   text-align: center;
   font-size: 4vw; }
 
-main .texto1 .foto1 {
+main .texto1 {
   grid-area: primero;
   display: flex;
-  justify-content: flex-start;
-  width: 45%;
-  height: 45%; }
-
-main .texto1 p {
-  color: black !important;
-  font-weight: bold;
-  margin: 8vh;
+  align-items: center;
+  justify-content: left;
+  margin: 5vw;
   font-size: 3vw; }
+  main .texto1 .foto1 {
+    grid-area: primero;
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
+    height: 45%; }
+  main .texto1 .p1, main .texto1 .texto2 p, main .texto2 .texto1 p {
+    color: black !important;
+    font-weight: bold;
+    margin: 8vh;
+    font-size: 3vw; }
 
-main .texto2 .foto2 {
+main .texto2 {
   grid-area: segundo;
   display: flex;
-  justify-content: flex-end;
-  width: 45%;
-  height: 45%;
-  order: 1; }
-
-main .texto2 p {
-  color: black !important;
-  font-weight: bold;
-  margin: 8vh;
-  font-size: 3vw; }
+  align-items: center;
+  justify-content: right;
+  order: 2;
+  font-size: 3vw;
+  margin-top: 9vw; }
+  main .texto2 .foto2 {
+    grid-area: segundo;
+    display: flex;
+    justify-content: flex-end;
+    width: 45%;
+    height: 45%;
+    order: 1; }
 
 main #primero {
   display: grid;

@@ -60,7 +60,7 @@ body {
         nav {
             .container-fluid {
                 a {
-                    color: $colorpagina;
+                    color: map-get($map, colorpagina);
                 }
             }
         }
@@ -75,7 +75,7 @@ body {
     font-size: 50px;
     text-align: right;
     margin-top: 10%;
-    color: $colorpagina;
+    color: map-get($map, colorpagina);
 }
 /* ----------------------------------------------------------------- */
 /* ---------------------- MAIN NUESTROS PRODUCTOS ------------------ */
@@ -125,14 +125,19 @@ main {
         font-size: 4vw;
     }
     .texto1 {
+        grid-area: primero;
+        display: flex;
+        align-items:center;
+        justify-content: left;
+        margin: 5vw;
+        font-size: 3vw;
         .foto1 {
             grid-area: primero;
             display: flex;
             justify-content: flex-start;
-            width: 45%;
-            height: 45%;
+            @include tamañofotos;
         }
-        p {
+        .p1 {
             color: black !important;
             font-weight: bold;
             margin: 8vh;
@@ -141,6 +146,13 @@ main {
     }
     
     .texto2 {
+        grid-area: segundo;
+        display: flex;
+        align-items:center;
+        justify-content: right;
+        order: 2;
+        font-size: 3vw;
+        margin-top: 9vw;
         .foto2 {
             grid-area: segundo;
             display: flex;
@@ -150,10 +162,7 @@ main {
             order: 1;
         }
         p {
-            color: black !important;
-            font-weight: bold;
-            margin: 8vh;
-            font-size: 3vw;
+            @extend .p1;
         }
     }
     
