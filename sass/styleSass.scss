@@ -16,10 +16,10 @@
     width: 45%;
     height: 45%;
 }
-// variables de SASS
 $map: (
     colorredes: black,
     colorpagina:rgb(250, 196, 20),
 );
+// variables de SASS
 @import "header.scss";
 @import "footer.scss";
