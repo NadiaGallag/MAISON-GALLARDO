@@ -1,0 +1,22 @@
+
+/* ----------------------------------------------------------------- */
+/* ------------------------- INICIO CONTACTO ---------------------- */
+/* --------------------------------------------------------------- */
+.contact__main {
+    display: grid;
+    grid-template-columns: 1 60%;
+    grid-template-rows: repeat(2 30% 60%);
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    p {
+        font-size: 3vw;
+        margin: 3rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contact__main p {
+        font-size: 5vw;
+    }
+}

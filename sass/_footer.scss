@@ -13,7 +13,6 @@ footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            
             font-size: 1.8rem;
             width: 2.8rem;
             height: 2.8rem;
@@ -32,12 +31,13 @@ footer {
 /* ----------------------------------------------------------------- */
 @media screen and (max-width:480px) {
     footer{
-        margin-top: 40%;
+        margin-top: 25%;
+        .footer_sec a {
+            font-size: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
-    .footer_sec a {
-        font-size: 1rem;
-        width: 1.5rem;
-        height: 1.5rem;
-    }
+    
 }
 

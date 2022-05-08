@@ -1,0 +1,30 @@
+body {
+    header {
+        nav {
+            .container-fluid {
+                a {
+                    color: map-get($map, colorpagina);
+                }
+            }
+        }
+    }
+}
+/* ----------------------------------------------------------------- */
+/* ---------------------------- MAIN INCIO INDEX ------------------- */
+/* ----------------------------------------------------------------- */
+.main_home p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 4vw;
+    text-align: right;
+    margin-top: 10%;
+    color: map-get($map, colorpagina);
+}
+
+
+
+@media screen and (max-width:480px) {
+    .main_home p {
+        font-size: 10vw;
+    }
+}

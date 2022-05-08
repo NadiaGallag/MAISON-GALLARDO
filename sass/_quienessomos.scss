@@ -1,0 +1,78 @@
+/* ---------------------------------------------------------------- */
+/* ------------------------ INICIO DE QUINES SOMOS ----------------- */
+/* ---------------------------------------------------------------- */
+main {
+    .somos {
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .texto1 {
+        grid-area: primero;
+        display: flex;
+        align-items:center;
+        margin-left: 2%;
+        .foto1 {
+            grid-area: primero;
+            display: flex;
+            justify-content: flex-start;
+            @include tamañofotos;
+        }
+        .p1 {
+            font-weight: bold;
+            font-size: 2.5vw;
+            justify-content: center;
+            margin-left: 4%;
+        }
+    }
+    
+    .texto2 {
+        grid-area: segundo;
+        display: flex;
+        align-items:center;
+        order: 2;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 15vw;
+        .foto2 {
+            grid-area: segundo;
+            display: flex;
+            justify-content: flex-end;
+            width: 45%;
+            height: 45%;
+            order: 1;
+        }
+        p {
+            font-size: 2.5vw;
+            font-weight: bold;
+            margin-right: 2%;
+        }
+    }
+    
+    #primero {
+        display: grid;
+        grid-template-rows: 20% 80%;;
+        grid-template-columns: repeat( 2 50%);
+        grid-template-areas: 
+        "primero" "segundo";
+    }
+}
+/* ---------------------------------------------------------------- */
+/* -------------------- MEDIAS DE QUIENES SOMOS ------------------- */
+/* ---------------------------------------------------------------- */
+@media screen and (max-width:480px) {
+    .p1 {
+        font-size: 1rem;
+        margin-left: 2%;
+    }
+    .p {
+        font-size: 1rem;
+        margin-right: 2%;
+    }
+    .fondo_2 {
+        width: 100%;
+        height: 100%;
+    }
+ 
+}

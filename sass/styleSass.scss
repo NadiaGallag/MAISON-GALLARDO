@@ -1,14 +1,14 @@
-/* -------------- Tipografia -------------- */
-/* --------------------------------------- */
+/* ----------------- Tipografia ----------------- */
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Source+Sans+Pro:wght@200&display=swap');
 
+/* --------- Caracteristicas Generales --------- */
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
     font-family:'Source Sans Pro', sans-serif;  
-    box-sizing: border-box;
     list-style: none;
     scroll-behavior: smooth;
 } 
@@ -20,6 +20,11 @@ $map: (
     colorredes: black,
     colorpagina:rgb(250, 196, 20),
 );
-// variables de SASS
-@import "header.scss";
+// paginas de SASS
+@import "fondos.scss";
 @import "footer.scss";
+@import "inicio.scss";
+@import "nuestrosproductos.scss";
+@import "quienessomos.scss";
+@import "sucursales.scss";
+@import "contacto.scss";

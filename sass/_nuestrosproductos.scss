@@ -1,0 +1,40 @@
+/* ----------------------------------------------------------------- */
+/* ---------------------- MAIN NUESTROS PRODUCTOS ------------------ */
+/* ----------------------------------------------------------------- */
+
+main {
+    .productos {
+        display: flex;
+
+        .productos_ {
+            
+            h2 {
+                text-align: center;
+                color: black;
+                font-weight: bold;
+                font-size: 4vw;
+                margin: 6%;
+            }
+        }
+        .productos__{
+            margin: 4%;
+            display: flex;
+            flex-wrap: wrap;
+            .img1, .img2, .img3, .img4 {
+                width: 15%;
+                height: 15%;
+                border-radius: 100%;
+        
+            }
+            p {
+                display: block;
+                color: black;
+                font-size: 2vw;
+                font-weight: bold;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+}

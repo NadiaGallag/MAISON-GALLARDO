@@ -1,0 +1,49 @@
+/* --------------------- INCIO SUCURSALES ------------------------ */
+.sucursales {
+    display: grid;
+    grid-template-columns: 60vw;
+    justify-content: center;
+    align-items: center;
+    
+
+    .locales {
+        p {
+            text-align: center; 
+            font-size: 4vw;
+        }
+        .sucursales__ {
+            li {
+                margin: 0;
+                text-align: left;
+                font-weight: 700;
+                font-size: 2.5vw;
+                list-style: square inside;
+            }
+        }
+    
+    }
+    .mapa {
+        div{
+            width: 100%;
+            padding-right: 6vw;
+
+        }
+    }
+}
+@media screen and (max-width:480px) {
+    .sucursales {
+        .locales {
+            p {
+                font-size: 8vw;
+            }
+            .sucursales__ {
+                li {
+                   font-size: 4vw;
+                   text-align: center;
+                   justify-content: center;
+                }
+            }
+        }
+
+    }
+}
